@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- Login Form -->
+        <div id="login-form" class="card p-5 shadow" style="width: 100%; max-width: 400px; min-height: 600px;">
+            <h2 class="text-center mb-4 fw-bold">Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-group d-flex align-items-center border-bottom">
+                        <i class="bi bi-person"></i>
+                        <input type="text" class="form-control custom-input border-0" id="username" placeholder="Type your username">
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group d-flex align-items-center border-bottom">
+                        <i class="bi bi-lock"></i>
+                        <input type="password" class="form-control custom-input border-0" id="password" placeholder="Type your password">
+                    </div>
+                </div>
+                <div class="text-end mb-4">
+                    <a href="#" class="text-decoration-none text-reset fs-7">Forgot password?</a>
+                </div>
+                <button type="button" id="loginBtn" class="btn btn-primary w-100 p-2">LOGIN</button>
+            </form>
+            <div class="text-center mt-3">
+                <p class="mt-3 fs-7">Or Sign Up Using</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-icon google"><i class="bi bi-google"></i></a>
+                </div>
+                <p class="mt-7 fs-7">Or Sign Up Using</p>
+                <a href="#" class="text-decoration-none text-reset fs-6">SIGN UP</a>
+            </div>
+        </div>
+
+        <!-- Table (Hidden Initially) -->
+        <div id="table-container" class="card p-4 shadow d-none" style="width: 100%; max-width: 1000px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Dialog (Hidden Initially) -->
+    <div id="dialog" title="Notification" style="display: none;">
+        <p id="dialog-message"></p>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

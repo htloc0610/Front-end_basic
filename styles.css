@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(135deg, #00c6ff, #ff00ff);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00c6ff, #ff00ff);
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.social-icons .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 3px;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.social-icons .social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .facebook {
+    background-color: #3b5998;
+}
+
+.social-icons .twitter {
+    background-color: #1da1f2;
+}
+
+.social-icons .google {
+    background-color: #db4437;
+}
+
+/* Custom Dialog Styling */
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0 auto;
+}
+
+#dialog-message {
+    color: black;
+}
+
+.mt-7 {
+    margin-top: 7rem !important;
+}
+
+.fs-7 {
+    font-size: 12px !important;
+}
+
+/* CSS to make odd rows bold */
+table tr:nth-child(odd) td {
+    background: #949695b0 !important; /* Red color */
+}
