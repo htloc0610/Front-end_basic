@@ -59,7 +59,8 @@ body {
 }
 
 #dialog-message {
-    color: black;
+    color: red;
+    text-align: center;
 }
 
 .mt-7 {
